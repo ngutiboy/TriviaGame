@@ -1,0 +1,147 @@
+
+    .jumbotron { 
+
+ 
+
+ 
+
+    text-align: center; 
+    
+     
+    
+    background-image:url("https://www.imdb.com/title/tt0053479/mediaviewer/rm1161254912");
+    
+     
+    
+    background-height: 800px; 
+    
+     
+    
+    height: 400px; 
+    
+     
+    
+    } 
+    
+     
+    
+     
+    
+     
+    
+    .option { 
+    
+     
+    
+    border: 2px red solid; 
+    
+     
+    
+    border-radius: 20%; 
+    
+     
+    
+    text-align: center; 
+    
+     
+    
+    width: 150px; 
+    
+     
+    
+    } 
+    
+     
+    
+     
+    
+     
+    
+    .option:hover { 
+    
+     
+    
+    cursor: pointer; 
+    
+     
+    
+    font-weight: bolder; 
+    
+     
+    
+    width: 170px; 
+    
+     
+    
+    height: 30px; 
+
+    
+body { 
+
+ 
+
+ 
+
+    line-height: 1; 
+    
+     
+}
+    
+    
+     
+    
+    ol, ul { 
+    
+     
+    
+    list-style: none; 
+    
+     
+    
+    } 
+    
+     
+    
+    blockquote, q { 
+    
+     
+    
+    quotes: none; 
+    
+     
+    
+    } 
+    
+     
+    
+    blockquote:before, blockquote:after, 
+    
+     
+    
+    q:before, q:after { 
+    
+     
+    
+    content: ''; 
+    
+     
+    
+    content: none; 
+    
+     
+    
+    } 
+    
+     
+    
+    table { 
+    
+     
+    
+    border-collapse: collapse; 
+    
+     
+    
+    border-spacing: 0; 
+    
+    }
