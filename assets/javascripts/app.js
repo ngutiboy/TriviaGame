@@ -1,11 +1,15 @@
 $(window).ready(function () {
+    // set variables
     var timerRunning = false;
     var intervalId;
     var timeoutId;
     var timeoutInteger;
     var gameClock;
+    // set user score to zero
     userScore = 0;
+    // set incorrect answers to zero before the game commences
     incorrectGuesses = 0;
+    // Array holding the questions
     questionArray = ["Which year did the Andy Griffith Show fitst debut?",
         "Where does the show take place?",
         "Which actor played the role of Deputy Fife?",
@@ -15,8 +19,10 @@ $(window).ready(function () {
         "What decade is presumed the show was set in?",
         "What hobby do Sheriff Taylor and his son most enjoy?",
         "What was the name of Andy's schoolteacher swearheart who debuted in season 3?",
-		"How many seasons of the Show actually was aired?"];
+        "How many seasons of the Show actually was aired?"];
+        // Array holding the correct answers
     correctAnswerArray = ["1960", "Mayberry, NC", "Don Knotts", "Opie", "The Fishing Hole", "On the Dnny Thomas Show", "1930s", "Fishing", "Helen Crump", "8"];
+    // answer options
     option2Array = ["1961", "Greenville, SC", "Marty Allen", "Ronny", "Gone Fishing", "On the Daily Show", "1940s", "Hunting", "Peggy McMillan", "7"];
     option3Array = ["1956", "Charleston, WV", "Frances Bavier", "Ricky", "Wade the river", "On broadway", "1950s", "Golfing", "Elinor Donahue", "6"];
     option4Array = ["1990", "Overland Park, KS", "Ramsey Noah", "Daniel", "The world's greatest", "On the Ed Sullivan Show", "1960s", "Dancing", "Liz Benzon", "23"];
@@ -47,7 +53,7 @@ $(window).ready(function () {
         startGame: function () {
             triviaGame.setClickHandler();
         },
-
+// on click of the start button, the game begins
         setClickHandler: function () {
             $("#start").on('click', function () {
                 $('#start').css("display", "none");
@@ -55,7 +61,7 @@ $(window).ready(function () {
                 triviaGame.startInterval();
             });
         },
-
+// function holding the time
         startInterval: function () {
             gameClock = 15;
             timerRunning = true;
@@ -101,7 +107,7 @@ $(window).ready(function () {
             };
 
         },
-
+      // function holding the selected answers
         answerSelected: function () {
             $('.correct').on('click', function () {
                 timerRunning = false;
@@ -118,7 +124,7 @@ $(window).ready(function () {
                 gameClock = 18;
                 triviaGame.questionArrayLoop();
             });
-
+     // function displaying the incorrect answers
             $('.incorrect').on('click', function () {
                 timerRunning = false;
                 incorrectGuesses++;
@@ -136,7 +142,7 @@ $(window).ready(function () {
                 triviaGame.questionArrayLoop();
             });
         },
-
+    // reset game function. The times begins with the scores reset to zero, as well as the questions 
         restartGame: function () {
             $('#resetGame').on('click', function () {
                 gameClock = 15;

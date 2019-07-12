@@ -1,35 +1,18 @@
 
     .jumbotron { 
 
- 
-
- 
-
-    text-align: center; 
-    
-     
-    
-    background-image:url("https://www.imdb.com/title/tt0053479/mediaviewer/rm1161254912");
-    
-     
-    
-    background-height: 800px; 
-    
-     
-    
+ text-align: center; 
     height: 400px; 
     
      
     
     } 
-    
+    img{
+        height: 150;
+        width: 150;
+    }
      
-    
-     
-    
-     
-    
-    .option { 
+ .option { 
     
      
     
@@ -74,74 +57,16 @@
      
     
     height: 30px; 
-
-    
-body { 
-
- 
-
- 
-
-    line-height: 1; 
-    
-     
-}
-    
-    
-     
-    
-    ol, ul { 
-    
-     
-    
-    list-style: none; 
-    
-     
-    
-    } 
-    
-     
-    
-    blockquote, q { 
-    
-     
-    
-    quotes: none; 
-    
-     
-    
-    } 
-    
-     
-    
-    blockquote:before, blockquote:after, 
-    
-     
-    
-    q:before, q:after { 
-    
-     
-    
-    content: ''; 
-    
-     
-    
-    content: none; 
-    
-     
-    
-    } 
-    
-     
-    
-    table { 
-    
-     
-    
-    border-collapse: collapse; 
-    
-     
-    
-    border-spacing: 0; 
-    
     }
+
+
+    
+    
+     
+    
+    
+     
+    
+
+    
+    
